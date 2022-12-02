@@ -1,8 +1,16 @@
 using UnityEngine;
+using UnityTddBeginner.Abstracts.Controllers;
+using UnityTddBeginner.Abstracts.Inputs;
 
-public class PlayerController : MonoBehaviour
+namespace UnityTddBeginner.Concretes.Controllers
+{ 
+public class PlayerController : MonoBehaviour,IPlayerController
+
 {
-    void Start()
+     public   IInputReader InputReader { get; set; }
+
+
+        void Start()
     {
         //movement
         //atack
@@ -15,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 }
+
+}
+

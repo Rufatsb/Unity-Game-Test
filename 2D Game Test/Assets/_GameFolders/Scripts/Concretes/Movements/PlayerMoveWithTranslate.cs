@@ -15,12 +15,12 @@ public class PlayerMoveWithTranslate : IMover
         readonly IPlayerController _playerController;
         readonly Transform _transform;
 
+       
 
-
-        public PlayerMoveWithTranslate(IPlayerController playerController, Transform transform)
+        public PlayerMoveWithTranslate(IPlayerController playerController)
         {
             _playerController = playerController;
-            _transform = transform;
+            _transform = playerController.transform;
         }
 
 
@@ -31,7 +31,7 @@ public class PlayerMoveWithTranslate : IMover
 
         public void FixedTick()
         {
-            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput));
+            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _moveSpeed));
         }
 
 

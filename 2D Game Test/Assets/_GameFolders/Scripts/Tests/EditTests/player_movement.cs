@@ -11,27 +11,44 @@ namespace Movements
 {
     public class player_movement
     {
-        [Test]
-        public void Move10MetersRightNotEqualStartPosition()
+        private IPlayerController GetPlayer ()
         {
-            //Arrange
+            IPlayerController playerController = Substitute.For<IPlayerController>();
 
-         IPlayerController playerController = Substitute.For<IPlayerController>();
+            GameObject gameObject = new GameObject();
 
-         GameObject gameObject = new GameObject();
-         
-         playerController.transform.Returns(gameObject.transform);
+            playerController.transform.Returns(gameObject.transform);
 
             playerController.InputReader = Substitute.For<IInputReader>();
 
-         IMover mover = new PlayerMoveWithTranslate(playerController, playerController.transform);
+            return playerController;
+        }
+
+        private IMover GetMover(IPlayerController playerController)
+        {
+            IMover mover = new PlayerMoveWithTranslate(playerController);
+
+            return mover;
+
+        }
+         
+        [Test]
+        [TestCase(1f)]
+        [TestCase(-1f)]
+
+        public void Move10MetersRightorLeftNotEqualStartPosition(float horizontalInputValue)
+        {
+            //Arrange
+            
+         var playerController = GetPlayer ();
+         var mover =  GetMover(playerController);
 
          Vector3 startPosition = playerController.transform.position;
 
 
 
             //Act
-            playerController.InputReader.Horizontal.Returns(1f);
+            playerController.InputReader.Horizontal.Returns(horizontalInputValue);
             for (int i = 0; i < 10; i++)
             {
                 mover.Tick();      //input
@@ -39,8 +56,8 @@ namespace Movements
 
             }
 
-            Debug.Log("Player start position => " + startPosition);
-            Debug.Log("Player end position => " + playerController.transform.position);
+            
+      
 
 
 
@@ -56,15 +73,11 @@ namespace Movements
         {
             //Arrange
 
-            IPlayerController playerController = Substitute.For<IPlayerController>();
+            var playerController = GetPlayer();
 
-            GameObject gameObject = new GameObject();
 
-            playerController.transform.Returns(gameObject.transform);
+            var mover = GetMover(playerController);
 
-            playerController.InputReader = Substitute.For<IInputReader>();
-
-            IMover mover = new PlayerMoveWithTranslate(playerController, playerController.transform);
 
             Vector3 startPosition = playerController.transform.position;
 
@@ -79,8 +92,7 @@ namespace Movements
 
             }
 
-            Debug.Log("Player start position => " + startPosition);
-            Debug.Log("Player end position => " + playerController.transform.position);
+            
 
 
 
@@ -91,60 +103,18 @@ namespace Movements
 
         }
 
-        [Test]
-        public void Move10MetersLeftNotEqualStartPosition()
-        {
-            //Arrange
-
-            IPlayerController playerController = Substitute.For<IPlayerController>();
-
-            GameObject gameObject = new GameObject();
-
-            playerController.transform.Returns(gameObject.transform);
-
-            playerController.InputReader = Substitute.For<IInputReader>();
-
-            IMover mover = new PlayerMoveWithTranslate(playerController, playerController.transform);
-
-            Vector3 startPosition = playerController.transform.position;
-
-
-
-            //Act
-            playerController.InputReader.Horizontal.Returns(-1f);
-            for (int i = 0; i < 10; i++)
-            {
-                mover.Tick();      //input
-                mover.FixedTick(); //act with input
-
-            }
-
-            Debug.Log("Player start position => " + startPosition);
-            Debug.Log("Player end position => " + playerController.transform.position);
-
-
-
-
-            //Assert
-
-            Assert.AreNotEqual(expected: startPosition, actual: playerController.transform.position);
-
-        }
+        
 
         [Test]
         public void Move10MetersLeftEndPositionGreaterThanStartPosition()
         {
             //Arrange
 
-            IPlayerController playerController = Substitute.For<IPlayerController>();
+            var playerController = GetPlayer();
 
-            GameObject gameObject = new GameObject();
 
-            playerController.transform.Returns(gameObject.transform);
+            var mover = GetMover(playerController);
 
-            playerController.InputReader = Substitute.For<IInputReader>();
-
-            IMover mover = new PlayerMoveWithTranslate(playerController, playerController.transform);
 
             Vector3 startPosition = playerController.transform.position;
 
@@ -159,8 +129,7 @@ namespace Movements
 
             }
 
-            Debug.Log("Player start position => " + startPosition);
-            Debug.Log("Player end position => " + playerController.transform.position);
+            
 
 
 

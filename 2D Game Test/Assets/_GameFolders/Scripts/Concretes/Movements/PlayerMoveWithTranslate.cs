@@ -31,7 +31,7 @@ public class PlayerMoveWithTranslate : IMover
 
         public void FixedTick()
         {
-            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _moveSpeed));
+            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _moveSpeed * Time.deltaTime ));
         }
 
 

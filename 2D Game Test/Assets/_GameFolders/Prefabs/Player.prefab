@@ -3,12 +3,13 @@
 --- !u!1 &3826016195396741671
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5314046161019155624, guid: 8bb00d2f19095d644a80445ff4f1fbd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521490275616264897}
+  - component: {fileID: 7666650541423980363}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -19,7 +20,7 @@ GameObject:
 --- !u!4 &1521490275616264897
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4831872278426315943, guid: 8bb00d2f19095d644a80445ff4f1fbd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826016195396741671}
@@ -32,10 +33,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7666650541423980363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826016195396741671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15366369ec254b2498a0aa2b230fbd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6868676951414549012
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2432986996151267282, guid: 8bb00d2f19095d644a80445ff4f1fbd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -52,7 +65,7 @@ GameObject:
 --- !u!4 &6612359955333223547
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5814927210814704486, guid: 8bb00d2f19095d644a80445ff4f1fbd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6868676951414549012}
@@ -67,7 +80,7 @@ Transform:
 --- !u!212 &3761466718940908565
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5090560816652613584, guid: 8bb00d2f19095d644a80445ff4f1fbd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6868676951414549012}

@@ -9,7 +9,6 @@ namespace UnityTddBeginner.Concretes.Movements
 
 public class PlayerMoveWithTranslate : IMover
 {
-        float _moveSpeed = 1f;
         float _horizontalInput = 0f;
        
         readonly IPlayerController _playerController;
@@ -31,7 +30,7 @@ public class PlayerMoveWithTranslate : IMover
 
         public void FixedTick()
         {
-            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _moveSpeed * Time.deltaTime ));
+            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _playerController.Stats.MoveSpeed * Time.deltaTime ));
         }
 
 

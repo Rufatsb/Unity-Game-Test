@@ -11,6 +11,6 @@ namespace UnityTddBeginner.Abstracts.Movements
     {
         void Tick();
 
-        void FixedTick();
+        //void FixedTick();
     }
 }

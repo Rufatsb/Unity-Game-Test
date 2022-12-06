@@ -5,7 +5,7 @@ using UnityTddBeginner.Abstracts.Controllers;
 using UnityTddBeginner.Abstracts.Inputs;
 using UnityTddBeginner.Abstracts.Movements;
 using UnityTddBeginner.Abstracts.ScriptableObjects;
-using UnityTddBeginner.Concretes.Movements;
+using UnityTddBeginner.Movements;
 
 namespace Movements
 
@@ -56,7 +56,7 @@ namespace Movements
             for (int i = 0; i < 10; i++)
             {
                 mover.Tick();      //input
-                mover.FixedTick(); //act with input
+                //mover.FixedTick(); //act with input
 
             }
 
@@ -92,7 +92,7 @@ namespace Movements
             for (int i = 0; i < 10; i++)
             {
                 mover.Tick();      //input
-                mover.FixedTick(); //act with input
+                //mover.FixedTick(); //act with input
 
             }
 
@@ -129,7 +129,7 @@ namespace Movements
             for (int i = 0; i < 10; i++)
             {
                 mover.Tick();      //input
-                mover.FixedTick(); //act with input
+                //mover.FixedTick(); //act with input
 
             }
 

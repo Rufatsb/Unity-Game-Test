@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityTddBeginner.Abstracts.Controllers;
 using UnityTddBeginner.Abstracts.Movements;
 
-namespace UnityTddBeginner.Concretes.Movements
+namespace UnityTddBeginner.Movements
 {
 
 public class PlayerMoveWithTranslate : IMover
@@ -28,10 +26,10 @@ public class PlayerMoveWithTranslate : IMover
             _horizontalInput = _playerController.InputReader.Horizontal;
         }
 
-        public void FixedTick()
-        {
-            _transform.Translate(translation:(Vector3)(Vector2.right * _horizontalInput * _playerController.Stats.MoveSpeed * Time.deltaTime ));
-        }
+        //public void FixedTick()
+        //{
+        //    _transform.Translate(Vector2.right * _horizontalInput * _playerController.Stats.MoveSpeed * Time.deltaTime);
+        //}
 
 
 

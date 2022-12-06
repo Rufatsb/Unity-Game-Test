@@ -3,7 +3,7 @@ using UnityTddBeginner.Abstracts.Controllers;
 using UnityTddBeginner.Abstracts.Inputs;
 using UnityTddBeginner.Abstracts.Movements;
 using UnityTddBeginner.Abstracts.ScriptableObjects;
-using UnityTddBeginner.Concretes.Movements;
+using UnityTddBeginner.Movements;
 using UnityTddBeginner.Concretes.ScriptableObjects;
 using UnityTddBeginner.Inputs;
 
@@ -23,24 +23,26 @@ public class PlayerController : MonoBehaviour,IPlayerController
 
 
 
-        //movement
 
         IMover _mover;
+        IFlip _flip;
 
         void Awake()
         {
             InputReader = new InputReader();
             _mover = new PlayerMoveWithTranslate(this);
+            _flip = new PlayerFlipWithScale(this);
         }
 
         void Update()
         {
             _mover.Tick();
+            _flip.Tick();
         }
       
         void FixedUpdate()
         {
-            _mover.FixedTick();
+            //_mover.FixedTick();
         }
  
     

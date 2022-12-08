@@ -10,22 +10,26 @@ namespace Movements
 {
     public class player_flip
     {
-        [Test]
-        [TestCase(1f)]
-        [TestCase(-1f)]
 
-
-        public void InputValue1PlayerScaleXResultEqual1(float horizontalInput)
+        private IPlayerController GetPlayer( float horizontalInput)
         {
-            //Arrange
-
             IPlayerController playerController = Substitute.For<IPlayerController>();
             GameObject parent = new();
-            GameObject body = new ();
+            GameObject body = new();
             body.transform.SetParent(parent.transform);
             playerController.transform.Returns(parent.transform);
             playerController.InputReader.Returns(Substitute.For<IInputReader>());
             playerController.InputReader.Horizontal.Returns(horizontalInput);
+
+            return playerController;
+        }
+        [Test]
+        [TestCase(1f)]
+        [TestCase(-1f)]
+        public void PlayerGetInputValueBodyScalexResultEqualInputValue(float horizontalInput)
+        {
+            //Arrange
+            IPlayerController playerController = GetPlayer(horizontalInput);
 
 
             IFlip flip = new PlayerFlipWithScale(playerController);
@@ -40,7 +44,40 @@ namespace Movements
 
             //Assert
 
-            Assert.AreEqual(horizontalInput, body.transform.localScale.x);
+            Assert.AreEqual(horizontalInput, playerController.transform.GetChild(0).transform.localScale.x);
+
+        }
+
+        [Test]
+        [TestCase(1f)]
+        [TestCase(-1f)]
+
+
+        public void PlayerGetInputValueAfterInputGet0BodyScalexResultEqualFirstInputValue(float horizontalInput)
+        {
+            //Arrange
+
+            IPlayerController playerController = GetPlayer(horizontalInput);
+
+
+            IFlip flip = new PlayerFlipWithScale(playerController);
+
+            float firstInputValue = horizontalInput;
+
+            //Act
+
+            for (int i = 0; i < 10; i++)
+            {
+                flip.Tick();
+
+            }
+
+            horizontalInput = 0;
+            playerController.InputReader.Horizontal.Returns(horizontalInput);
+
+            //Assert
+
+            Assert.AreEqual(firstInputValue, playerController.transform.GetChild(0).transform.localScale.x);
 
         }
     }

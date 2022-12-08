@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 655
+  controlID: 753
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 656
+  controlID: 754
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 634
+  controlID: 755
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d4beffff06bfffff68c0ffff5ec2ffff90c2ffffe8c2ffffe2c3ffffccc4fffffec4ffff40c6ffff76c6ffffa8c6ffff2ec8ffffdac9ffff1ccaffff94cbffffd6ccffff18cdffffb0ceffff2cd0ffff6cd0ffffdcd0ffff8cd1ffffced1ffff4ed3ffff6ad4ffffacd4ffff2cd6ffff34d8ffff76d8ffff0edaffff2cdbffff6edbfffff0dcffff0adeffff4cdeffffcedfffff1ee4ffff62e4ffffdee5ffff52e6ffff84e6ffffc2e7ffffa6e8ffffdae8ffff18eaffff68ecffff74edffffd4eeffff1af0ffffa2f1fffff0f4ffff86f6ffff90f6ffffd2f6ffff70f8ffff0afbffff
+      m_ExpandedIDs: 58f3ffffcaf3fffffcf3ffffaaf5ffffbef7ffff0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -688,9 +688,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 746d0000
-    m_LastClickedID: 28020
-    m_ExpandedIDs: 0000000068640000b4640000c46800001a92000000ca9a3b
+    m_SelectedIDs: 42640000
+    m_LastClickedID: 25666
+    m_ExpandedIDs: 000000004064000044640000466400004864000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -718,7 +718,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000000ca9a3b
+    m_ExpandedIDs: 0000000044640000466400004864000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -743,8 +743,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80f6ffff
-    m_LastClickedInstanceID: -2432
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -821,14 +821,14 @@ MonoBehaviour:
     y: 0
     width: 449
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -863,7 +863,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -2432
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -899,7 +899,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 132
+    ID: 780
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -930,7 +930,7 @@ MonoBehaviour:
       uniqueId: '[2D Game Test][suite]'
       name: 2D Game Test
       fullName: 2D Game Test
-      resultStatus: 1
+      resultStatus: 0
       duration: 6.4450245
       messages: 
       output: 
@@ -948,7 +948,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: C:/Users/Ali Aliyev/Desktop/unity test game/Unity-Game-Test/2D Game
         Test/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 1
+      resultStatus: 0
       duration: 6.3068085
       messages: 
       output: 
@@ -998,7 +998,7 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/[PlayModeTests][Movements][suite]
       name: Movements
       fullName: Movements
-      resultStatus: 1
+      resultStatus: 0
       duration: 6.3016787
       messages: 
       output: 
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Movements/[PlayModeTests][Movements.player_flip][suite]
       name: player_flip
       fullName: Movements.player_flip
-      resultStatus: 1
+      resultStatus: 0
       duration: 6.2989564
       messages: 
       output: 
@@ -1031,8 +1031,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Movements/player_flip/[PlayModeTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1][suite]
       name: InputValue1PlayerScaleXResultEqual1
       fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1
-      resultStatus: 1
-      duration: 6.2950106
+      resultStatus: 0
+      duration: 6.4674377
       messages: 
       output: 
       stacktrace: 
@@ -1047,8 +1047,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Movements/player_flip/InputValue1PlayerScaleXResultEqual1/[PlayModeTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1(1.0f)]
       name: InputValue1PlayerScaleXResultEqual1(1.0f)
       fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1(1.0f)
-      resultStatus: 1
-      duration: 3.2353625
+      resultStatus: 0
+      duration: 3.3945165
       messages: 
       output: 
       stacktrace: 
@@ -1064,8 +1064,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Movements/player_flip/InputValue1PlayerScaleXResultEqual1/[PlayModeTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1(-1.0f)]
       name: InputValue1PlayerScaleXResultEqual1(-1.0f)
       fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1(-1.0f)
-      resultStatus: 1
-      duration: 3.0413187
+      resultStatus: 0
+      duration: 3.046406
       messages: 
       output: 
       stacktrace: 
@@ -1077,6 +1077,56 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1024
       parentUniqueId: PlayModeTests.dll/Movements/player_flip/[PlayModeTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1][suite]
+    - id: 1030
+      uniqueId: PlayModeTests.dll/Movements/player_flip/[PlayModeTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
+      name: PlayerScaleXResultStopAndInputCameZero
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: PlayModeTests.dll/Movements/[PlayModeTests][Movements.player_flip][suite]
+    - id: 1028
+      uniqueId: PlayModeTests.dll/Movements/player_flip/PlayerScaleXResultStopAndInputCameZero/[PlayModeTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(1.0f)]
+      name: PlayerScaleXResultStopAndInputCameZero(1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(1.0f)
+      resultStatus: 0
+      duration: 0
+      messages: Cancelled by user
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: PlayModeTests.dll/Movements/player_flip/[PlayModeTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
+    - id: 1029
+      uniqueId: PlayModeTests.dll/Movements/player_flip/PlayerScaleXResultStopAndInputCameZero/[PlayModeTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(-1.0f)]
+      name: PlayerScaleXResultStopAndInputCameZero(-1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(-1.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: PlayModeTests.dll/Movements/player_flip/[PlayModeTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
     - id: 1017
       uniqueId: PlayModeTests.dll/Movements/[PlayModeTests][Movements.player_movement][suite]
       name: player_movement
@@ -1219,12 +1269,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1017
       parentUniqueId: PlayModeTests.dll/Movements/[PlayModeTests][Movements.player_movement][suite]
-    m_ResultText: InputValue1PlayerScaleXResultEqual1 (6,295s)
+    m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6c707059
-      m_LastClickedID: 1500541036
+      m_SelectedIDs: 5bf2b5ff
+      m_LastClickedID: -4853157
       m_ExpandedIDs: 946ad9845bf2b5ffb5155c04cdd2231371e6c2316c70705996ad0061bfe90b7cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1260,7 +1310,7 @@ MonoBehaviour:
       name: 2D Game Test
       fullName: 2D Game Test
       resultStatus: 1
-      duration: 0.217793
+      duration: 0.3673054
       messages: 
       output: 
       stacktrace: 
@@ -1278,7 +1328,7 @@ MonoBehaviour:
       fullName: C:/Users/Ali Aliyev/Desktop/unity test game/Unity-Game-Test/2D Game
         Test/Library/ScriptAssemblies/EditTests.dll
       resultStatus: 1
-      duration: 0.1877944
+      duration: 0.3374442
       messages: 
       output: 
       stacktrace: 
@@ -1328,7 +1378,7 @@ MonoBehaviour:
       name: Movements
       fullName: Movements
       resultStatus: 1
-      duration: 0.1870147
+      duration: 0.3365938
       messages: 
       output: 
       stacktrace: 
@@ -1345,7 +1395,7 @@ MonoBehaviour:
       name: player_flip
       fullName: Movements.player_flip
       resultStatus: 1
-      duration: 0.185946
+      duration: 0.3350973
       messages: 
       output: 
       stacktrace: 
@@ -1356,12 +1406,12 @@ MonoBehaviour:
       categories: []
       parentId: 1026
       parentUniqueId: EditTests.dll/[EditTests][Movements][suite]
-    - id: 1018
-      uniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1][suite]
-      name: InputValue1PlayerScaleXResultEqual1
-      fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1
+    - id: 1022
+      uniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultEqualInputValue][suite]
+      name: PlayerScaleXResultEqualInputValue
+      fullName: Movements.player_flip.PlayerScaleXResultEqualInputValue
       resultStatus: 1
-      duration: 0.1799208
+      duration: 0.3173734
       messages: 
       output: 
       stacktrace: 
@@ -1370,14 +1420,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1015
+      parentId: 1019
       parentUniqueId: EditTests.dll/Movements/[EditTests][Movements.player_flip][suite]
-    - id: 1016
-      uniqueId: EditTests.dll/Movements/player_flip/InputValue1PlayerScaleXResultEqual1/[EditTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1(1.0f)]
-      name: InputValue1PlayerScaleXResultEqual1(1.0f)
-      fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1(1.0f)
+    - id: 1020
+      uniqueId: EditTests.dll/Movements/player_flip/PlayerScaleXResultEqualInputValue/[EditTests][Movements.player_flip.PlayerScaleXResultEqualInputValue(1.0f)]
+      name: PlayerScaleXResultEqualInputValue(1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultEqualInputValue(1.0f)
       resultStatus: 1
-      duration: 0.1659127
+      duration: 0.3035437
       messages: 
       output: 
       stacktrace: 
@@ -1387,14 +1437,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1018
-      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1][suite]
-    - id: 1017
-      uniqueId: EditTests.dll/Movements/player_flip/InputValue1PlayerScaleXResultEqual1/[EditTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1(-1.0f)]
-      name: InputValue1PlayerScaleXResultEqual1(-1.0f)
-      fullName: Movements.player_flip.InputValue1PlayerScaleXResultEqual1(-1.0f)
+      parentId: 1022
+      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultEqualInputValue][suite]
+    - id: 1021
+      uniqueId: EditTests.dll/Movements/player_flip/PlayerScaleXResultEqualInputValue/[EditTests][Movements.player_flip.PlayerScaleXResultEqualInputValue(-1.0f)]
+      name: PlayerScaleXResultEqualInputValue(-1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultEqualInputValue(-1.0f)
       resultStatus: 1
-      duration: 0.0010755
+      duration: 0.0009497
       messages: 
       output: 
       stacktrace: 
@@ -1404,8 +1454,58 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1018
-      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.InputValue1PlayerScaleXResultEqual1][suite]
+      parentId: 1022
+      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultEqualInputValue][suite]
+    - id: 1025
+      uniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
+      name: PlayerScaleXResultStopAndInputCameZero
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero
+      resultStatus: 1
+      duration: 0.0121735
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1019
+      parentUniqueId: EditTests.dll/Movements/[EditTests][Movements.player_flip][suite]
+    - id: 1023
+      uniqueId: EditTests.dll/Movements/player_flip/PlayerScaleXResultStopAndInputCameZero/[EditTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(1.0f)]
+      name: PlayerScaleXResultStopAndInputCameZero(1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(1.0f)
+      resultStatus: 1
+      duration: 0.0016698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
+    - id: 1024
+      uniqueId: EditTests.dll/Movements/player_flip/PlayerScaleXResultStopAndInputCameZero/[EditTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(-1.0f)]
+      name: PlayerScaleXResultStopAndInputCameZero(-1.0f)
+      fullName: Movements.player_flip.PlayerScaleXResultStopAndInputCameZero(-1.0f)
+      resultStatus: 1
+      duration: 0.0013804
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: EditTests.dll/Movements/player_flip/[EditTests][Movements.player_flip.PlayerScaleXResultStopAndInputCameZero][suite]
     - id: 1003
       uniqueId: EditTests.dll/Movements/[EditTests][Movements.player_movement][suite]
       name: player_movement
@@ -1506,12 +1606,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: EditTests.dll/Movements/player_movement/[EditTests][Movements.player_movement.Move10MetersRightorLeftNotEqualStartPosition][suite]
-    m_ResultText: InputValue1PlayerScaleXResultEqual1(-1.0f) (0,001s)
+    m_ResultText: player_flip (0,335s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2300c020
-      m_LastClickedID: 549453859
+      m_SelectedIDs: a7a1fd4d
+      m_LastClickedID: 1308467623
       m_ExpandedIDs: 946ad9847ff3e9a8fe5a2aae99a55ad85d2e86ee3ce6c941a7a1fd4d734b5c7dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

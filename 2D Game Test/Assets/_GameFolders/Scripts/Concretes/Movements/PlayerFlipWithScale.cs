@@ -23,7 +23,11 @@ namespace UnityTddBeginner.Movements
 
         public void Tick()
         {
-            _transform.localScale = new Vector3(_playerController.InputReader.Horizontal,1f,1f);
+
+            float horizontalInput = _playerController.InputReader.Horizontal;
+            if (horizontalInput == 0)
+                return;
+            _transform.localScale = new Vector3(horizontalInput, 1f,1f);
         }
     }
 

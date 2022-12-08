@@ -34,8 +34,8 @@ namespace Movements
 
 
         [UnityTest]
-        [TestCase(1f,ExpectedResult =(IEnumerator)null)]
-        [TestCase(-1f, ExpectedResult = (IEnumerator)null)]
+        [TestCase(1f,ExpectedResult = null)]
+        [TestCase(-1f, ExpectedResult = null)]
         public IEnumerator PlayerMoveLeftOrRightNotEqualStartPosition(float inputValue)
         {
             //Arrange//

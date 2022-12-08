@@ -14,26 +14,68 @@ namespace Movements
 {
     public class player_flip
     {
+        IPlayerController _playerController;
+
+        private IEnumerator LoadPlayerMoveTestScene()
+        {
+            yield return SceneManager.LoadSceneAsync("PlayerMovementTest");
+
+        }
+
+        [UnitySetUp]
+        IEnumerator Setup()
+        {
+            yield return LoadPlayerMoveTestScene();
+
+            _playerController = GameObject.FindObjectOfType<PlayerController>();
+            _playerController.InputReader = Substitute.For<IInputReader>();
+
+
+        }
+
         [UnityTest]
         [TestCase(1f,ExpectedResult = null)]
         [TestCase(-1f, ExpectedResult = null)]
-        public IEnumerator InputValue1PlayerScaleXResultEqual1(float horizontalInput)
+        public IEnumerator PlayerGetInputValueBodyScalexResultEqualInputValue(float horizontalInput)
         {
             //Arrange
 
-            yield return SceneManager.LoadSceneAsync("PlayerMovementTest");
-            IPlayerController playerController = GameObject.FindObjectOfType<PlayerController>();
-            playerController.InputReader = Substitute.For<IInputReader>();
+
 
 
             //Act
-            playerController.InputReader.Horizontal.Returns(horizontalInput);
+            _playerController.InputReader.Horizontal.Returns(horizontalInput);
 
             yield return new WaitForSeconds(3f);
 
             //Assert
-            Assert.AreEqual(horizontalInput, playerController.transform.GetChild(0).transform.localScale.x);
+            Assert.AreEqual(horizontalInput, _playerController.transform.GetChild(0).transform.localScale.x);
 
+
+        }
+        [UnityTest]
+        [TestCase(1f, ExpectedResult = null)]
+        [TestCase(-1f, ExpectedResult = null)]
+
+
+        public IEnumerator PlayerGetInputValueAfterInputGet0BodyScalexResultEqualFirstInputValue(float horizontalInput)
+        {
+            //Arrange
+          
+            float firstInputValue = horizontalInput;
+
+
+
+            //Act
+            _playerController.InputReader.Horizontal.Returns(horizontalInput);
+            yield return new WaitForSeconds(3f);
+            horizontalInput = 0;
+            _playerController.InputReader.Horizontal.Returns(horizontalInput);
+            yield return new WaitForSeconds(3f);
+
+
+            //Assert
+            Assert.AreEqual(firstInputValue, _playerController.transform.GetChild(0).transform.localScale.x);
 
         }
     }

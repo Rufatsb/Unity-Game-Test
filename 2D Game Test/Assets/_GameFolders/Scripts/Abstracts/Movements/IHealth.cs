@@ -6,5 +6,8 @@ namespace UnityTddBeginner.Abstracts.Movements
     {
         int CurrentHealth { get; }
         void TakeDamage(IAttacker attacker);
+
+        event System.Action OnTookDamage;
+        event System.Action OnDead;
     }
 }

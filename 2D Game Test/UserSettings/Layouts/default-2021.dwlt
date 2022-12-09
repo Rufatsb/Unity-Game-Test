@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 937
+  controlID: 91
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 875
+  controlID: 81
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 876
+  controlID: 82
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 360
     height: 556
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,15 +241,15 @@ MonoBehaviour:
     y: 556
     width: 1463
     height: 383
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,9 +402,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d0980000
+      m_SelectedIDs: 9e270000
       m_LastClickedID: 0
-      m_ExpandedIDs: b4cdffffa4daffffe4daffffd8dcfffff6ddffff36deffff2ae0ffffbce0ffff0ae1ffffa2e1ffffeae1ffff50e3ffff00e6ffff40e6ffff34e8ffff32eaffff76eaffff08edffff50edffff94edffff4aeeffff92efffff0ef1ffff4ef1ffff58f3ffffcaf3fffffcf3ffffaaf5ffffbef7ffff0afbffff
+      m_ExpandedIDs: c0eaffff28ebffff08eeffff3eeffffff6f2ffff2af4ffff7af7fffff4f8ffff0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -810,9 +810,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 56640000
-    m_LastClickedID: 25686
-    m_ExpandedIDs: 000000004064000044640000466400004864000000ca9a3b
+    m_SelectedIDs: 5e640000
+    m_LastClickedID: 25694
+    m_ExpandedIDs: 000000002a6400002c6400002e6400005c64000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -840,7 +840,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000044640000466400004864000000ca9a3b
+    m_ExpandedIDs: 000000002a6400002c6400002e640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -865,8 +865,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d0980000
-    m_LastClickedInstanceID: 39120
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -958,7 +958,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 39120
+  m_LastInspectedObjectInstanceID: 10142
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 991
+    ID: 117
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -1398,7 +1398,7 @@ MonoBehaviour:
       name: 2D Game Test
       fullName: 2D Game Test
       resultStatus: 1
-      duration: 0.211425
+      duration: 0.0350332
       messages: 
       output: 
       stacktrace: 
@@ -1415,7 +1415,7 @@ MonoBehaviour:
       fullName: C:/Users/Ali Aliyev/Desktop/unity test game/Unity-Game-Test/2D Game
         Test/Library/ScriptAssemblies/EditTests.dll
       resultStatus: 1
-      duration: 0.1715778
+      duration: 0.0130149
       messages: 
       output: 
       stacktrace: 
@@ -1431,7 +1431,7 @@ MonoBehaviour:
       name: Combats
       fullName: Combats
       resultStatus: 1
-      duration: 0.1705829
+      duration: 0.0123832
       messages: 
       output: 
       stacktrace: 
@@ -1447,7 +1447,7 @@ MonoBehaviour:
       name: health
       fullName: Combats.health
       resultStatus: 1
-      duration: 0.1690572
+      duration: 0.0118487
       messages: 
       output: 
       stacktrace: 
@@ -1458,12 +1458,96 @@ MonoBehaviour:
       categories: []
       parentId: 1039
       parentUniqueId: EditTests.dll/[EditTests][Combats][suite]
+    - id: 1026
+      uniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero][suite]
+      name: TakeDamageCurrentHealthNotLessThanZero
+      fullName: Combats.health.TakeDamageCurrentHealthNotLessThanZero
+      resultStatus: 1
+      duration: 0.254147
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: EditTests.dll/Combats/[EditTests][Combats.health][suite]
+    - id: 1022
+      uniqueId: EditTests.dll/Combats/health/TakeDamageCurrentHealthNotLessThanZero/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero(1)]
+      name: TakeDamageCurrentHealthNotLessThanZero(1)
+      fullName: Combats.health.TakeDamageCurrentHealthNotLessThanZero(1)
+      resultStatus: 1
+      duration: 0.2389667
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero][suite]
+    - id: 1023
+      uniqueId: EditTests.dll/Combats/health/TakeDamageCurrentHealthNotLessThanZero/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero(2)]
+      name: TakeDamageCurrentHealthNotLessThanZero(2)
+      fullName: Combats.health.TakeDamageCurrentHealthNotLessThanZero(2)
+      resultStatus: 1
+      duration: 0.001126
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero][suite]
+    - id: 1024
+      uniqueId: EditTests.dll/Combats/health/TakeDamageCurrentHealthNotLessThanZero/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero(5)]
+      name: TakeDamageCurrentHealthNotLessThanZero(5)
+      fullName: Combats.health.TakeDamageCurrentHealthNotLessThanZero(5)
+      resultStatus: 1
+      duration: 0.0002676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero][suite]
+    - id: 1025
+      uniqueId: EditTests.dll/Combats/health/TakeDamageCurrentHealthNotLessThanZero/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero(10)]
+      name: TakeDamageCurrentHealthNotLessThanZero(10)
+      fullName: Combats.health.TakeDamageCurrentHealthNotLessThanZero(10)
+      resultStatus: 1
+      duration: 0.0004208
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageCurrentHealthNotLessThanZero][suite]
     - id: 1021
       uniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth][suite]
       name: TakeDamageNotEqualMaxHealth
       fullName: Combats.health.TakeDamageNotEqualMaxHealth
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0162641
       messages: 
       output: 
       stacktrace: 
@@ -1478,8 +1562,8 @@ MonoBehaviour:
       uniqueId: EditTests.dll/Combats/health/TakeDamageNotEqualMaxHealth/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth(1)]
       name: TakeDamageNotEqualMaxHealth(1)
       fullName: Combats.health.TakeDamageNotEqualMaxHealth(1)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0075965
       messages: 
       output: 
       stacktrace: 
@@ -1495,8 +1579,8 @@ MonoBehaviour:
       uniqueId: EditTests.dll/Combats/health/TakeDamageNotEqualMaxHealth/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth(2)]
       name: TakeDamageNotEqualMaxHealth(2)
       fullName: Combats.health.TakeDamageNotEqualMaxHealth(2)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0003742
       messages: 
       output: 
       stacktrace: 
@@ -1512,8 +1596,8 @@ MonoBehaviour:
       uniqueId: EditTests.dll/Combats/health/TakeDamageNotEqualMaxHealth/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth(5)]
       name: TakeDamageNotEqualMaxHealth(5)
       fullName: Combats.health.TakeDamageNotEqualMaxHealth(5)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002549
       messages: 
       output: 
       stacktrace: 
@@ -1529,8 +1613,8 @@ MonoBehaviour:
       uniqueId: EditTests.dll/Combats/health/TakeDamageNotEqualMaxHealth/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth(10)]
       name: TakeDamageNotEqualMaxHealth(10)
       fullName: Combats.health.TakeDamageNotEqualMaxHealth(10)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002305
       messages: 
       output: 
       stacktrace: 
@@ -1542,6 +1626,124 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1021
       parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeDamageNotEqualMaxHealth][suite]
+    - id: 1033
+      uniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakedFatalDamageOnDeadTriggered]
+      name: TakedFatalDamageOnDeadTriggered
+      fullName: Combats.health.TakedFatalDamageOnDeadTriggered
+      resultStatus: 1
+      duration: 0.1382687
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditTests.dll/Combats/[EditTests][Combats.health][suite]
+    - id: 1032
+      uniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime][suite]
+      name: TakeManyDamageOnTookDamageEventTriggeredManyTime
+      fullName: Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime
+      resultStatus: 1
+      duration: 0.0080107
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: EditTests.dll/Combats/[EditTests][Combats.health][suite]
+    - id: 1028
+      uniqueId: EditTests.dll/Combats/health/TakeManyDamageOnTookDamageEventTriggeredManyTime/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(1)]
+      name: TakeManyDamageOnTookDamageEventTriggeredManyTime(1)
+      fullName: Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(1)
+      resultStatus: 1
+      duration: 0.0033046
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime][suite]
+    - id: 1029
+      uniqueId: EditTests.dll/Combats/health/TakeManyDamageOnTookDamageEventTriggeredManyTime/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(2)]
+      name: TakeManyDamageOnTookDamageEventTriggeredManyTime(2)
+      fullName: Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(2)
+      resultStatus: 1
+      duration: 0.0003008
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime][suite]
+    - id: 1030
+      uniqueId: EditTests.dll/Combats/health/TakeManyDamageOnTookDamageEventTriggeredManyTime/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(5)]
+      name: TakeManyDamageOnTookDamageEventTriggeredManyTime(5)
+      fullName: Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(5)
+      resultStatus: 1
+      duration: 0.0002653
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime][suite]
+    - id: 1031
+      uniqueId: EditTests.dll/Combats/health/TakeManyDamageOnTookDamageEventTriggeredManyTime/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(10)]
+      name: TakeManyDamageOnTookDamageEventTriggeredManyTime(10)
+      fullName: Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime(10)
+      resultStatus: 1
+      duration: 0.0003396
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeManyDamageOnTookDamageEventTriggeredManyTime][suite]
+    - id: 1027
+      uniqueId: EditTests.dll/Combats/health/[EditTests][Combats.health.TakeOneDamageOnTookDamageEventTriggeredOneTime]
+      name: TakeOneDamageOnTookDamageEventTriggeredOneTime
+      fullName: Combats.health.TakeOneDamageOnTookDamageEventTriggeredOneTime
+      resultStatus: 1
+      duration: 0.1439399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditTests.dll/Combats/[EditTests][Combats.health][suite]
     - id: 1001
       uniqueId: EditTests.dll/[EditTests][first_edit_test_script][suite]
       name: first_edit_test_script
@@ -1809,13 +2011,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: EditTests.dll/Movements/player_movement/[EditTests][Movements.player_movement.Move10MetersRightorLeftNotEqualStartPosition][suite]
-    m_ResultText: Combats (0,171s)
+    m_ResultText: TakeManyDamageOnTookDamageEventTriggeredManyTime (0,008s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3eeb3121
-      m_LastClickedID: 556919614
-      m_ExpandedIDs: 946ad9847ff3e9a8fe5a2aae99a55ad85d2e86ee3eeb31213ce6c941a7a1fd4db957b1662ec7e376734b5c7dffffff7f
+      m_SelectedIDs: a2c4ab2c
+      m_LastClickedID: 749454498
+      m_ExpandedIDs: 946ad9847ff3e9a845e182abfe5a2aae99a55ad85d2e86ee3eeb3121a2c4ab2ca8ff4c363ce6c941a7a1fd4db957b1662ec7e376734b5c7dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

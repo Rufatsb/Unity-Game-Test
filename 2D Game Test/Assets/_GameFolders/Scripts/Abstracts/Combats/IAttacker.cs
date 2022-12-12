@@ -1,4 +1,4 @@
-﻿namespace UnityTddBeginner.Abstracts.Movements
+﻿namespace UnityTddBeginner.Abstracts.Combats
 
 {
     public interface IAttacker

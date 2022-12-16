@@ -10,6 +10,11 @@ namespace UnityTddBeginner.Concretes.ScriptableObjects
         float _moveSpeed = 5f;
 
         public float MoveSpeed => _moveSpeed;
+
+        [Header("Combat Info")][SerializeField]
+        int _maxHealth = 10;
+
+        public int MaxHealth => _maxHealth;
     }
 
 }

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Console
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 86
+  controlID: 64
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 16
+  controlID: 65
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 17
+  controlID: 66
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,15 +241,15 @@ MonoBehaviour:
     y: 556
     width: 1463
     height: 383
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,7 +340,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -402,9 +402,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bc0b0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28d5ffffaed6ffffc0d7ffff54dbffffccdcffff0adfffff82dfffff34e0ffff66e1ffffece2ffff82e6fffff0e6ffff58e7ffffc0e7ffff30e8ffff36eaffff72ebffffb0ecffffeeedffff5eeeffff64f0ffffa6f1ffffe6f2ffffa2f6ffff0afbffff
+      m_ExpandedIDs: 96bbffffd8bbffff72bdffff96beffffd8beffff72c0ffff76c7ffffbec7fffffec7ffff8cc9ffff9ecaffffdecaffff6cccffff46cdffff86cdffff14cfffff5acfffff9acfffff28d1ffff3ed2ffff7ed2ffff0cd4ffff28d5ffff68d5fffff6d6ffff8ad9ffffcad9ffff58dbffff6edcffffaedcffff3cdeffffb0e0fffff0e0ffff7ae2ffffc4e2ffff04e3ffff8ee4ffffa6e5ffffe6e5ffff70e7ffff86e8ffffc6e8ffff50eaffff9ceaffffdceaffff66ecffffaeecffffeeecffff7ceeffff8cf5ffff3ef6ffffbcf6ffff6af7ffffbcf7ffff68f9ffff0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -675,9 +675,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9392397, y: -1.1591254, z: -0.036304016}
+    m_Target: {x: 0.63786954, y: 1.9444673, z: -0.034247186}
     speed: 2
-    m_Value: {x: 0.9392397, y: -1.1591254, z: -0.036304016}
+    m_Value: {x: 0.63786954, y: 1.9444673, z: -0.034247186}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -728,9 +728,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.3268957
+    m_Target: 4.0157127
     speed: 2
-    m_Value: 5.3268957
+    m_Value: 4.0157127
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -796,23 +796,23 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/_GameFolders/Scripts/Tests/PlayModeTests
+    - Assets/_GameFolders/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_GameFolders/Scripts/Tests/PlayModeTests
+  - Assets/_GameFolders/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Ali Aliyev\Desktop\unity test game\Unity-Game-Test\2D
     Game Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a640000
-    m_LastClickedID: 25690
-    m_ExpandedIDs: 000000002a6400002c6400002e6400005864000000ca9a3b
+    scrollPos: {x: 0, y: 62}
+    m_SelectedIDs: 64640000
+    m_LastClickedID: 25700
+    m_ExpandedIDs: 000000002a6400002c6400002e6400005c6400006a64000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -865,9 +865,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 76c7ffff
+    m_LastClickedInstanceID: -14474
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 3004
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 136
+    ID: 1236
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 18}
     m_NewResultList:
@@ -1025,9 +1025,9 @@ MonoBehaviour:
       uniqueId: '[2D Game Test][suite]'
       name: 2D Game Test
       fullName: 2D Game Test
-      resultStatus: 1
-      duration: 19.335508
-      messages: 
+      resultStatus: 2
+      duration: 3.7717915
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1037,15 +1037,14 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1023
-      uniqueId: '[PlayModeTests][C:/Users/Ali Aliyev/Desktop/unity test game/Unity-Game-Test/2D
-        Game Test/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1063
+      uniqueId: '[PlayModeTests.dll][suite]'
       name: PlayModeTests.dll
       fullName: C:/Users/Ali Aliyev/Desktop/unity test game/Unity-Game-Test/2D Game
         Test/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 1
-      duration: 18.900393
-      messages: 
+      resultStatus: 2
+      duration: 3.3267167
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1053,8 +1052,65 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1014
+      parentId: 1045
       parentUniqueId: '[2D Game Test][suite]'
+    - id: 1064
+      uniqueId: PlayModeTests.dll/[PlayModeTests][Combats][suite]
+      name: Combats
+      fullName: Combats
+      resultStatus: 2
+      duration: 3.309199
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1063
+      parentUniqueId: '[PlayModeTests.dll][suite]'
+    - id: 1048
+      uniqueId: PlayModeTests.dll/Combats/[PlayModeTests][Combats.player_health][suite]
+      name: player_health
+      fullName: Combats.player_health
+      resultStatus: 2
+      duration: 3.3007896
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1064
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][Combats][suite]
+    - id: 1049
+      uniqueId: PlayModeTests.dll/Combats/player_health/[PlayModeTests][Combats.player_health.playerTakeOneDamage]
+      name: playerTakeOneDamage
+      fullName: Combats.player_health.playerTakeOneDamage
+      resultStatus: 2
+      duration: 3.2687185
+      messages: "  Expected: 9\r\n  But was:  10\r\n"
+      output: 
+      stacktrace: 'at Combats.player_health+<playerTakeOneDamage>d__4.MoveNext ()
+        [0x00092] in C:\Users\Ali Aliyev\Desktop\unity test game\Unity-Game-Test\2D
+        Game Test\Assets\_GameFolders\Scripts\Tests\PlayModeTests\player_health.cs:56
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Users\Ali Aliyev\Desktop\unity test game\Unity-Game-Test\2D Game Test\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: PlayModeTests.dll/Combats/[PlayModeTests][Combats.player_health][suite]
     - id: 1015
       uniqueId: PlayModeTests.dll/[PlayModeTests][first_play_mode_test_script][suite]
       name: first_play_mode_test_script
@@ -1356,14 +1412,26 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1017
       parentUniqueId: PlayModeTests.dll/Movements/[PlayModeTests][Movements.player_movement][suite]
-    m_ResultText: PlayerGetInputValueAfterInputGet0BodyScalexResultEqualFirstInputValue(-1.0f)
-      (6,114s)
-    m_ResultStacktrace: 
+    m_ResultText: "playerTakeOneDamage (3,269s)\n---\nExpected: 9\r\n  But was: 
+      10\n---\nat Combats.player_health+<playerTakeOneDamage>d__4.MoveNext () [0x00092]
+      in C:\\Users\\Ali Aliyev\\Desktop\\unity test game\\Unity-Game-Test\\2D Game
+      Test\\Assets\\_GameFolders\\Scripts\\Tests\\PlayModeTests\\player_health.cs:56\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
+      C:\\Users\\Ali Aliyev\\Desktop\\unity test game\\Unity-Game-Test\\2D Game Test\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46"
+    m_ResultStacktrace: 'at Combats.player_health+<playerTakeOneDamage>d__4.MoveNext
+      () [0x00092] in C:\Users\Ali Aliyev\Desktop\unity test game\Unity-Game-Test\2D
+      Game Test\Assets\_GameFolders\Scripts\Tests\PlayModeTests\player_health.cs:56
+
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
+      C:\Users\Ali Aliyev\Desktop\unity test game\Unity-Game-Test\2D Game Test\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 872c6e8c
-      m_LastClickedID: -1938936697
-      m_ExpandedIDs: 946ad9845bf2b5ffb5155c04cdd22313bb89f22c71e6c2316c70705996ad0061bfe90b7cffffff7f
+      m_SelectedIDs: 98def72d
+      m_LastClickedID: 771219096
+      m_ExpandedIDs: 946ad984a400c28bae332b915bf2b5ffb5155c04cdd22313bb89f22c71e6c231ace6f4496c70705996ad0061bfe90b7cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
